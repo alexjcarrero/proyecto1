@@ -1,3 +1,12 @@
+<?php
+if ($_POST == null) {
+    $nombre = "Ingrese un nombre";
+    
+}else {
+    $nombre = "Se agrego ".$_POST['nombre'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,19 +37,19 @@
                 <a href="index.html" class="aBoots"><li>Bootstrap</li></a>
             </ol>
     
-            <form action="">
+            <form method="POST"action="home.php?seAgregoNombre=Yes">
                 <div class="row"><!--Div es una division (Block)-->
                     <div class="col-3">
                         <label for="">Nombre</label>
-                        <input type="text">
+                        <input name="nombre" type="text" placeholder="<?= $nombre?>">
                     </div>
                     <div class="col-3">
                         <label for="">Mail</label>
-                        <input type="email">
+                        <input name="mail" type="email">
                     </div>
                     <div class="col-3">
                         <label for="">Pass</label>
-                        <input type="password">
+                        <input name="pass" type="password">
                     </div>
 
                     <div class="col-3">
