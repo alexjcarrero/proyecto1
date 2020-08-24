@@ -1,0 +1,28 @@
+body{
+    background-color: cadetblue;
+    /* background-image: url(./2084.jpg); */
+}
+
+h1{
+    color: darkblue;
+}
+
+/* Con id */
+#miH6{
+    color: red;
+}
+
+/* Con class */
+.misUlLi{
+    color: red;
+}
+
+/* Con class */
+.misOlLi{
+    color: red;
+}
+
+.aBoots{
+    color: red;
+    text-decoration: none;
+}
